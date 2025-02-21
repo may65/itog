@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+flower/temlates/home.html
+<h1>Добро пожаловать!</h1>
+    <h2>List of Users</h2>
+    <ul>
+        {% for user in users %}
+            <li>{{ user.username }} - {{ user.email }}</li>
+        {% empty %}
+            <li>No users found.</li>
+        {% endfor %}
+    </ul>
+<!--<a href="{# url 'logout' #}">Выйти</a>-->
+{% endblock %}

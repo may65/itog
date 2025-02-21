@@ -1,0 +1,18 @@
+<!--flower/order_confirmation.html-->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card shadow text-center">
+    <div class="card-header bg-success text-white">
+        <h3>Заказ успешно оформлен!</h3>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Номер заказа: #{{ order.id }}</h5>
+        <p class="card-text">Спасибо за ваш заказ! Мы свяжемся с вами для уточнения деталей.</p>
+<!--        <a href="{# url 'flower:product_list' #}" class="btn btn-primary">-->
+        <a href="{% url 'product_list' %}" class="btn btn-primary">
+            Вернуться в каталог
+        </a>
+    </div>
+</div>
+{% endblock %}
