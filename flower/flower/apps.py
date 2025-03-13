@@ -13,5 +13,5 @@ class FlowerConfig(AppConfig):
 
     def ready(self):
         if not settings.TESTING:
-            from .telegram_bot import setup_bot
+            from .del_telegram_bot import setup_bot
             setup_bot()

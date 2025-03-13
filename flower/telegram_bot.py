@@ -12,7 +12,9 @@ django.setup()
 
 from flower.models import Product, Order, OrderItem
 from django.contrib.auth.models import User
+from dotenv import load_dotenv
 
+load_dotenv()
 # Конфигурация бота
 TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 ADMIN_CHAT_ID = os.getenv('ADMIN_CHAT_ID')

@@ -1,3 +1,5 @@
+# Задание ITOG
+
 "FlowerDeliveryBasic
 Техническое задание:
 Сайт с доставкой цветов и получение заказов через Telegram бота
@@ -41,3 +43,15 @@
 
 Методы и стратегии тестирования:
 - Юнит-тестирование."
+
+# Установка ITOG
+
+- git clone https://github.com/may65/itog.git
+- pip install requirements.txt
+
+# Запуск ITOG
+
+- Зайти в папку проекта
+- В консоле1 запустить - python manage.py runserver
+- В консоле2 запустить - python telegram_bot.py
+- В телеграме flower_bot (flower_65_bot) - можно заказывать

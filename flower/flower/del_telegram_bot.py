@@ -1,4 +1,4 @@
-# flower/telegram_bot.py
+# flower/del_telegram_bot.py
 from telegram import Bot
 from telegram.ext import Updater, CommandHandler
 from django.conf import settings

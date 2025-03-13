@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Product, Order, OrderItem
 from django.contrib.auth.decorators import login_required
 from django.conf import settings
-from .telegram_bot import send_order_notification
+from .del_telegram_bot import send_order_notification
 
 
 def product_list(request):
